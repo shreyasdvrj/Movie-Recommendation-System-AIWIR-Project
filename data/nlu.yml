@@ -1,0 +1,1379 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: thank
+  examples: |
+    - thank you
+    - thanks
+    - tnx
+    - much obliged
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+ 
+- intent: out_of_scope
+  examples: |
+    - a wood chuck can't chuck any kind of wood
+    - a wood chuck can't chuck wood
+    - are you wearing anything?
+    - can i arrange a taxi
+    - can i book a taxi?
+    - can i order a pizza?
+    - give quiche a chance
+    - how much wood could a wood chuck chuck if a wood chuck would chuck wood?
+    - i am heavy weapons guy and this is my weapon
+    - i know kung-fu
+    - i need a taxi
+    - i want a pepperoni pizza
+    - i want to order a pizza
+    - i'd like a pizza please
+    - i'm all out of bubblegum
+    - i'm asking you to marry me
+    - it's an albany expression
+    - marry me
+    - now i have a machine gun ho-ho-ho!
+    - please marry me
+    - tell me what you're wearing?
+    - trial by stone!
+    - what are you wearing?
+    - will you marry me?
+    - you come to me on the day of my daughter's wedding
+    - you don't win friends with salad
+    - you're going to need a bigger boat
+    - Wie fange ich mit Rasa an?
+    - hilf mir beim start
+    - tschüssikowski
+    - ¿Qué pasa?
+    - ça va ?
+    - como te llamas
+    - wer bist Du?
+    - como inicio en rasa
+    - come stai?
+    - como estas
+    - de donde eres
+    - de que lugar eres?
+    - epdi iruka
+    - eres humana
+    - kalhmera sara ti kaneis
+    - kannst du auch deutsch?
+    - oui je besoine de l'aide
+    - que puedes hacer?
+    - tu parles francais?
+    - tudo bom
+    - tu pagal
+    - kannst du mir helfen
+    - tu kaisi he
+    - こにちは
+    - 日本語分かる？
+    - chào
+    - 你好
+    - I'm speaking a non-english language.
+    - 呵呵
+    - 我该如何使用
+    - 你懂中文吗？
+    - 您好
+    - 你叫什么名字
+    - 你是谁
+    - 中文
+    - kya hindi me bat kar sakate ho
+    - Dumme sara
+    - αστεία λές
+    - rasa codigo abierto
+    - 卧槽
+    - intent:out_of_scope/other
+    - I am asking you an out of scope question
+    - 4 + 2 = ?
+    - After registration I see that I have an available balance of 0.00000000. What does this balance represent?
+    - Are you ready?
+    - But you're an english site :(
+    - Can I ask you questions first?
+    - Can I get a hamburger?
+    - Can YouTube talk?
+    - Can you call me back ?
+    - Can you give me your datacenter's password
+    - Can you give me your datacenter's password?
+    - Can you make sandwiches?
+    - Can you please send me an uber
+    - Do I have to accept?
+    - Do you know Kevin Pelton
+    - Find nearest pizzahut
+    - Have we met before?
+    - HomeBase is advertised as a community. Is there a way to interact with other members of the community?
+    - How long does it take to set up a Rasa bot?
+    - I already told you! I'm a shitmuncher
+    - I am User
+    - I am an opioid addic
+    - I am an opioid addict
+    - I am hungry
+    - I am trying to build one, and did some research before, but I have not do hand-on work yet
+    - I can barely see this white text on light gray background ...
+    - I changed my mind
+    - I have installed it
+    - I ned a GP in 94301
+    - I need a GP in 94301
+    - I need a girl friend!
+    - I need to eat cake
+    - I wan to buy a plane
+    - I wanna marry you
+    - I want a new laptop
+    - I want book a hotel
+    - I want french cuisine
+    - I want pizza
+    - I want to order pizza
+    - I want to use pipe
+    - I will check
+    - I'm a shitmuncher
+    - Is Rasa really smart?
+    - Is this Goal-Oriented Chatbot?
+    - Is today saturday?
+    - Mail me the guide
+    - Make me a sandwich
+    - NLW
+    - Nice name
+    - Now?
+    - Pizza bot
+    - Recharge
+    - SEL ME SOMETHING
+    - The Try it out is not working
+    - The weather is good
+    - Today
+    - Try it out broken
+    - What day is it today?
+    - What did you eat yesterday?
+    - What do you prefer?
+    - What is todays date
+    - What is your hobbies?
+    - What makes you better than a human?
+    - What's 1 + 1?
+    - What's do YouTube do
+    - What's your backend system?
+    - Where am I right now?
+    - Where am I?
+    - Who ?
+    - Who are your customers
+    - Why don’t you answer?
+    - Why is my TRUST score set to 50 after I completed the registration process?
+    - Won't you ask me how I am?
+    - You'r blue.
+    - Kristin, I want to marry you
+    - german?
+    - a tamed mouse will arrive at your doorstep in the next couple of days
+    - aRE YOU SINGLE
+    - again?
+    - alexa, order 5 tons of natrium chloride
+    - and make chicken noises into the phone
+    - are the newsletter worth the subscription?
+    - are u facebook
+    - are u, facebook?
+    - are you single?
+    - are you dev?
+    - are you russian?
+    - are you sick
+    - are you using Rasa Core and NLU ?
+    - are you vegan
+    - better than you
+    - book a ticket
+    - but I just told you that :(
+    - but if rasa is open source why do you have a sales team
+    - buy one please
+    - buy groceries
+    - call me father
+    - can we keep chatting?
+    - can you book dinner
+    - can you cheer me up
+    - can you cook dinner
+    - can you give me a cup of coffee
+    - can you help me with the docs?
+    - can you help me with your docs
+    - can you help me with your docs?
+    - can you learn from our conversation?
+    - can you speak about politic ?
+    - can you understand ?
+    - cannot see
+    - chgfhgh
+    - chinese ok?
+    - colder
+    - common, just try
+    - connect to alexa
+    - cr
+    - custom service
+    - did i break you
+    - dinner
+    - do you believe in god?
+    - do you have a phone number?
+    - do you have your photo?
+    - do you know me
+    - do you know ras
+    - do you liek cheese?
+    - do you like football
+    - do you like movies
+    - do you sell vacuum robots?
+    - do you want to marry me?
+    - docs
+    - doctor
+    - everything
+    - example of a chatbot
+    - genocide
+    - get me a club mate
+    - give me a girl friend
+    - give me food
+    - go back
+    - google?
+    - great, I'd like to buy a house
+    - hang on let me find it
+    - have you ever seen Keith Reilly?
+    - help with Alma Abrams
+    - help with my life
+    - hey little mama let em whisper in your ear
+    - hey, I contacted you a couple of days ago but didn't get any response, any news?
+    - how
+    - how about NYC
+    - how are Alicia Jackson's cats doing?
+    - how are the kids
+    - how can i get them?
+    - how can i test this
+    - how come you say ok ?
+    - how do you learn
+    - how good is Rasa
+    - how it compares to alexa
+    - how long have you been online?
+    - how long will the next version will launch?
+    - how many lines of codes
+    - how much is 10 + 89 ?
+    - how much is 10 + 89
+    - how to get rasa studio
+    - how to go to newyork ?
+    - i am hungry
+    - i am hungry, what should i do?
+    - i am not a developer but need this for business
+    - i am qq
+    - i can't deal with your request
+    - i do not care how are you
+    - i hope you will be better
+    - i immediately need help with implementing the coolest bot you can imagine
+    - i m looking for job
+    - i told you already
+    - i wanna party
+    - i want a non dripping ice cream
+    - i want caffe
+    - i want food
+    - i want good flycam
+    - i want more of you in my life!
+    - i want pizza
+    - i want pizza!!
+    - i want to book a hotel
+    - i want to buy a roomba for my grandson
+    - i want to eat
+    - i want to find new friends
+    - i want to find out what you can build with rasa
+    - i want to fly
+    - i want to grab lunch
+    - i want to know current situtation in pakistan
+    - i want to order a pizza
+    - i want to see your happy customers
+    - i will tame a mouse for you
+    - is John Lewis still married to you
+    - is it a wasteland full of broken robot parts?
+    - is it allow to
+    - is rasa a studio?
+    - is rasa any good
+    - is that any of your business
+    - isn't the newsletter just spam?
+    - it's a pity
+    - i´m hungry
+    - license
+    - ljljl
+    - lunch
+    - lunch??
+    - machine learning
+    - mail me the steps
+    - mascot means?
+    - more
+    - mountain
+    - my name k
+    - no wait go back i want a dripping ice cream but a cone that catches it so you can drink the ice cream later
+    - offer me lunch
+    - oh my god, not again!
+    - oh wait i gave you my work email address can i change it?
+    - ok one then
+    - on wiche nlp based system are you build?
+    - only that?
+    - order good
+    - order pizza
+    - personal or work?
+    - pizza
+    - please help with my ice cream it's dripping
+    - please hjave lunchj
+    - please hurry, i have deadline in two weeks to deliver the bot it is for very big company
+    - please play music
+    - rasa topics
+    - really? you're so touchy?
+    - refresh
+    - region with no. of records
+    - remember my name
+    - search wikipedia
+    - shitmuncher
+    - show me a picture of a chicken
+    - silly bot
+    - sing me a song
+    - so, I'm helping right now to training you?
+    - some thing else
+    - sorry, i cannot rephrase
+    - sudo make me a sandwich
+    - tell me about yourself
+    - tell me more about next best action
+    - that doesn't sound like a joke
+    - that link doesn't work!
+    - the one that is better than you
+    - tricked ya
+    - turn off my stove
+    - umm
+    - wait a bit i am still reading
+    - what about wheather
+    - what are contextual AI assistants and how different are they from chatbots?
+    - what are you doing now?
+    - what are your uses for universities
+    - what did you eat for lunch?
+    - what do oyu think about siri?
+    - what do you think abou siri?
+    - what do you think about Stanley Ramirez?
+    - what do you think of alexa
+    - what does your soul feel my friend
+    - what doing
+    - what else?
+    - what films do you like
+    - what i do after cd starter-pack-rasa-stack?
+    - what is a discourse?
+    - what is a mascot
+    - what is adlingo
+    - what is differance between bot and mascot?
+    - what is evolution ?
+    - what is google rcs
+    - what is machine learning
+    - what is nice?
+    - what is the capital of delhi
+    - what is the capital of india
+    - what is the current petrol price
+    - what is the day ?
+    - what is the real use case where we can use this one
+    - what is your address?
+    - what is your purpose
+    - what lnu mean?
+    - what the latest news ?
+    - what you ate today?
+    - what's 5 + 5
+    - what's a newsletter?
+    - what's gingerale
+    - what's your wife doing this weekend
+    - what?
+    - whats that
+    - whats the sign
+    - when is the next train is coming?
+    - where do i get install files for mac?
+    - where is Oslo?
+    - where is mexico?
+    - wheres the party?
+    - which city are you talking about?
+    - which email
+    - which email should i send to ?
+    - which file is created first while developing chat bot
+    - which is the LNU asynchronism ?
+    - which kind
+    - who are the engineers at rasa?
+    - who are they?
+    - who is Sharon Zeches
+    - who is the MD of samsung bangalore ?
+    - who is the president of india ?
+    - who is your favourite robot?
+    - who let the dog out
+    - who was hitler
+    - who will anser my email?
+    - who's Bill Gates?
+    - whta you think about gdpr?
+    - why do you need that?
+    - why its called rasa ?
+    - will u kill me
+    - will u kill me?
+    - winter is already leaving
+    - with you recommend me?
+    - would you like some water
+    - yeah, my dog was drinking a couple of litres of water per day and tried drinking the swimming pool
+    - you already have that
+    - you can learn how to make a coffe
+    - you have children?
+    - you have job opening
+    - you lock sweety
+    - you should learn to count
+    - you will know it from the single red rose it carries between its teeth
+    - you're a woman
+    - ı am learning python
+    - CALL THE POLICE
+    - tertyryutyi
+    - wsdrcftvgybhnj
+    - why sky is blue?
+    - what kind of bird are you?
+    - contextua
+    - contextual
+    - talk to me about voulette
+    - voulette voulette
+    - Do you have a demo?
+    - Cars
+    - please voulette
+    - Out of scope question.
+    - i need money
+    - no, i need cash, money! Do you have it ?
+    - the beatles
+    - Hi i want to go palghar
+    - I want to go palghar
+    - your contry name
+    - you girl
+    - gsaf
+    - expert of rasa
+    - i want play ball
+    - flight catch up
+    - how do you like your coffee
+    - Can you get analytics on who I'm chatting with when I use Rasa
+    - where do i type in commandy
+    - where to type in commands
+    - kiss me
+    - you have to
+    - what type of bot?
+    - sfasd
+    - asdkjasdhjkasd
+    - j bhbhj
+    - eshdtjfjfyk
+    - drhdtjfjfyj
+    - sudo reboot
+    - asdfgasd
+    - asdfgasdas
+    
+
+#All moods
+- intent: Happy
+  examples: |
+    - perfect
+    - happy
+    - i am so happy
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: Sad
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: Excitement
+  examples: |
+    - I am so excited
+    - This is excting
+    - Let's goo!
+    - I can feel the excitement
+    
+- intent: Disgust
+  examples: |
+    - This is disgusting
+    - Yuck
+    - Disgusting
+    - I am disgusted
+
+- intent: Anger
+  examples: |
+    - This is so shit 
+    - Uggghhhh
+    - This makes me angry
+    - I am angry
+
+- intent: Fear
+  examples: |
+    - This is so scary
+    - I'm scared
+    - This makes me scared
+    - I'm fearing this
+
+- intent: Enjoyment
+  examples: |
+    - This is so fun
+    - I'm enjoying this
+    - Enjoyment
+    - This is so nice
+
+#Bot
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - who are you
+
+#Recommendations
+- intent: ask_movie
+  examples: |
+    - Give me a movie to watch
+    - Give me a movie
+    - I want to watch a movie
+    - Suggest a movie
+    - I am in the mood to watch a movie
+    - I feel like watching a movie
+    - What to watch
+    - What movie to watch
+    - I feel like watching something
+    - Movie
+
+- intent: genre
+  examples: |
+    - show me all genres
+    - show me all available genres
+    - what are the genres?
+
+#All movies
+- intent: all_movie
+  examples: |
+    - Batman Begins
+    - V for Vendetta
+    - Sin City
+    - Star Wars: Episode III - Revenge of the Sith
+    - Harry Potter and the Goblet of Fire
+    - Mr. & Mrs. Smith
+    - Charlie and the Chocolate Factory
+    - War of the Worlds
+    - The 40-Year-Old Virgin
+    - King Kong
+    - The Chronicles of Narnia: The Lion, the Witch and the Wardrobe
+    - Madagascar
+    - Wedding Crashers
+    - Brokeback Mountain
+    - Fantastic Four
+    - Constantine
+    - The Island
+    - Hitch
+    - Lord of War
+    - Serenity
+    - Kingdom of Heaven
+    - Pride & Prejudice
+    - Corpse Bride
+    - Walk the Line
+    - Saw II
+    - A History of Violence
+    - Kiss Kiss Bang Bang
+    - Thank You for Smoking
+    - Munich
+    - Match Point
+    - The Descent
+    - Transporter 2
+    - The Hitchhiker's Guide to the Galaxy
+    - Cinderella Man
+    - Jarhead
+    - Hostel
+    - The Longest Yard
+    - Hard Candy
+    - Flightplan
+    - Green Street Hooligans
+    - The Departed
+    - The Prestige
+    - 300
+    - Pirates of the Caribbean: Dead Man's Chest
+    - Pan's Labyrinth
+    - Casino Royale
+    - Blood Diamond
+    - X-Men: The Last Stand
+    - Children of Men
+    - The Pursuit of Happyness
+    - Little Miss Sunshine
+    - The Da Vinci Code
+    - The Devil Wears Prada
+    - Cars
+    - Borat: Cultural Learnings of America for Make Benefit Glorious Nation of Kazakhstan
+    - The Lives of Others
+    - The Illusionist
+    - Inside Man
+    - Mission: Impossible III
+    - Night at the Museum
+    - Click
+    - Lucky Number Slevin
+    - Deja Vu
+    - Apocalypto
+    - Babel
+    - Superman Returns
+    - Ice Age: The Meltdown
+    - The Holiday
+    - The Fast and the Furious: Tokyo Drift
+    - Perfume: The Story of a Murderer
+    - Crank
+    - The Fountain
+    - Stranger Than Fiction
+    - Silent Hill
+    - Rocky Balboa
+    - Underworld: Evolution
+    - Saw III
+    - The Last King of Scotland
+    - Happy Feet
+    - Talladega Nights: The Ballad of Ricky Bobby
+    - Over the Hedge
+    - The Hills Have Eyes
+    - Letters from Iwo Jima
+    - She's the Man
+    - Idiocracy
+    - No Country for Old Men
+    - I Am Legend
+    - Ratatouille
+    - The Bourne Ultimatum
+    - Transformers
+    - Pirates of the Caribbean: At World's End
+    - Into the Wild
+    - Superbad
+    - There Will Be Blood
+    - Harry Potter and the Order of the Phoenix
+    - Spider-Man 3
+    - Juno
+    - Hot Fuzz
+    - Zodiac
+    - Live Free or Die Hard
+    - American Gangster
+
+- intent: all_movie1
+  examples: |
+    - Knocked Up
+    - Sweeney Todd: The Demon Barber of Fleet Street
+    - Ocean's Thirteen
+    - Shooter
+    - The Simpsons Movie
+    - 3:10 to Yuma
+    - The Mist
+    - Shrek the Third
+    - 28 Weeks Later
+    - 1408
+    - Stardust
+    - Fantastic 4: Rise of the Silver Surfer
+    - Gone Baby Gone
+    - Atonement
+    - Sunshine
+    - The Bucket List
+    - Eastern Promises
+    - Ghost Rider
+    - Paranormal Activity
+    - Disturbia
+    - National Treasure: Book of Secrets
+    - P.S. I Love You
+    - Fracture
+    - Resident Evil: Extinction
+    - The Darjeeling Limited
+    - The Golden Compass
+    - Grindhouse
+    - Enchanted
+    - The Dark Knight
+    - WALL�E
+    - Iron Man
+    - Slumdog Millionaire
+    - Gran Torino
+    - The Curious Case of Benjamin Button
+    - Taken
+    - Hancock
+    - The Incredible Hulk
+    - Twilight
+    - Indiana Jones and the Kingdom of the Crystal Skull
+    - The Hurt Locker
+    - Kung Fu Panda
+    - Quantum of Solace
+    - In Bruges
+    - Tropic Thunder
+    - Cloverfield
+    - Wanted
+    - Yes Man
+    - Pineapple Express
+    - Burn After Reading
+    - The Wrestler
+    - Jumper
+    - Seven Pounds
+    - Step Brothers
+    - Forgetting Sarah Marshall
+    - Hellboy II: The Golden Army
+    - Vicky Cristina Barcelona
+    - Changeling
+    - RocknRolla
+    - The Reader
+    - 21
+    - Valkyrie
+    - Role Models
+    - Rambo
+    - Mamma Mia!
+    - Body of Lies
+    - Ip Man
+    - Let the Right One In
+    - Get Smart
+    - Madagascar: Escape 2 Africa
+    - Death Race
+    - The Happening
+    - Revolutionary Road
+    - The Chronicles of Narnia: Prince Caspian
+    - You Don't Mess with the Zohan
+    - Inglourious Basterds
+    - Avatar
+    - Up
+    - The Hangover
+    - District 9
+    - Sherlock Holmes
+    - Star Trek
+    - Zombieland
+    - Watchmen
+    - 500 Days of Summer
+    - Harry Potter and the Half-Blood Prince
+    - X-Men Origins: Wolverine
+    - Transformers: Revenge of the Fallen
+    - 2012
+    - Terminator Salvation
+    - 3 Idiots
+    - Moon
+    - Up in the Air
+    - The Proposal
+    - The Blind Side
+    - Public Enemies
+    - Angels & Demons
+    - Law Abiding Citizen
+    - The Twilight Saga: New Moon
+    - Fast & Furious
+    - The Road
+
+- intent: all_movie2
+  examples: |
+    - Ice Age: Dawn of the Dinosaurs
+    - Knowing
+    - Mr. Nobody
+    - The Girl with the Dragon Tattoo
+    - The Ugly Truth
+    - Cloudy with a Chance of Meatballs
+    - G.I. Joe: The Rise of Cobra
+    - Fantastic Mr. Fox
+    - Coraline
+    - I Love You, Man
+    - The Secret in Their Eyes
+    - Orphan
+    - Drag Me to Hell
+    - The Taking of Pelham 123
+    - 17 Again
+    - Night at the Museum: Battle of the Smithsonian
+    - Surrogates
+    - He's Just Not That Into You
+    - Inception
+    - Shutter Island
+    - Toy Story 3
+    - Iron Man 2
+    - Black Swan
+    - How to Train Your Dragon
+    - The King's Speech
+    - The Social Network
+    - Kick-Ass
+    - Despicable Me
+    - Harry Potter and the Deathly Hallows: Part 1
+    - Tangled
+    - Alice in Wonderland
+    - Scott Pilgrim vs. the World
+    - Easy A
+    - The Town
+    - 127 Hours
+    - The Fighter
+    - The Expendables
+    - Due Date
+    - TRON: Legacy
+    - True Grit
+    - Salt
+    - The Book of Eli
+    - RED
+    - Insidious
+    - Prince of Persia: The Sands of Time
+    - Clash of the Titans
+    - Robin Hood
+    - The A-Team
+    - The Other Guys
+    - Grown Ups
+    - The Twilight Saga: Eclipse
+    - Megamind
+    - The Tourist
+    - Predators
+    - Machete
+    - Unstoppable
+    - Blue Valentine
+    - Shrek Forever After
+    - The Next Three Days
+    - Love & Other Drugs
+    - Knight and Day
+    - Percy Jackson & the Olympians: The Lightning Thief
+    - Get Him to the Greek
+    - Tucker and Dale vs Evil
+    - Harry Potter and the Deathly Hallows: Part 2
+    - The Intouchables
+    - Thor
+    - Captain America: The First Avenger
+    - X-Men: First Class
+    - Drive
+    - Limitless
+    - Rise of the Planet of the Apes
+    - Source Code
+    - Pirates of the Caribbean: On Stranger Tides
+    - Crazy, Stupid, Love
+    - The Hangover Part II
+    - Mission: Impossible - Ghost Protocol
+    - Warrior
+    - The Help
+    - Horrible Bosses
+    - Sherlock Holmes: A Game of Shadows
+    - The Girl with the Dragon Tattoo
+    - Midnight in Paris
+    - Transformers: Dark of the Moon
+    - The Cabin in the Woods
+    - In Time
+    - Moneyball
+    - Fast Five
+    - Friends with Benefits
+    - Super 8
+    - 50/50
+    - Hugo
+    - Real Steel
+    - Contagion
+    - Bridesmaids
+    - Green Lantern
+    - Kung Fu Panda 2
+    - Unknown
+    - The Adjustment Bureau
+    - The Grey
+
+- intent: all_movie3
+  examples: |
+    - Paul
+    - Rango
+    - The Descendants
+    - The Artist
+    - Sucker Punch
+    - I Am Number Four
+    - The Twilight Saga: Breaking Dawn - Part 1
+    - Just Go with It
+    - A Separation
+    - The Dark Knight Rises
+    - Django Unchained
+    - The Avengers
+    - The Hunger Games
+    - The Hobbit: An Unexpected Journey
+    - Silver Linings Playbook
+    - Skyfall
+    - Life of Pi
+    - Argo
+    - Ted
+    - Prometheus
+    - The Amazing Spider-Man
+    - Looper
+    - 21 Jump Street
+    - The Perks of Being a Wallflower
+    - Wreck-It Ralph
+    - Brave
+    - Cloud Atlas
+    - Men in Black 3
+    - Flight
+    - Moonrise Kingdom
+    - Les Mis�rables
+    - Jack Reacher
+    - The Expendables 2
+    - Taken 2
+    - The Bourne Legacy
+    - Pitch Perfect
+    - The Hunt
+    - The Dictator
+    - Snow White and the Huntsman
+    - Zero Dark Thirty
+    - John Carter
+    - Dredd
+    - Dark Shadows
+    - The Place Beyond the Pines
+    - Lincoln
+    - Total Recall
+    - Seven Psychopaths
+    - Chronicle
+    - Battleship
+    - The Twilight Saga: Breaking Dawn - Part 2
+    - End of Watch
+    - Lawless
+    - Hotel Transylvania
+    - Sinister
+    - Safe House
+    - American Reunion
+    - The Impossible
+    - Ice Age: Continental Drift
+    - The Wolf of Wall Street
+    - Gravity
+    - Iron Man 3
+    - Man of Steel
+    - 12 Years a Slave
+    - The Hunger Games: Catching Fire
+    - The Hobbit: The Desolation of Smaug
+    - World War Z
+    - Now You See Me
+    - Prisoners
+    - Thor: The Dark World
+    - Frozen
+    - Her
+    - Oblivion
+    - The Great Gatsby
+    - Pacific Rim
+    - Star Trek Into Darkness
+    - American Hustle
+    - The Conjuring
+    - Dallas Buyers Club
+    - Rush
+    - The Wolverine
+    - Elysium
+    - Captain Phillips
+    - We're the Millers
+    - This Is the End
+    - Despicable Me 2
+    - Fast & Furious 6
+    - Monsters University
+    - Snowpiercer
+    - About Time
+    - The Secret Life of Walter Mitty
+    - The Hangover Part III
+    - Lone Survivor
+    - The World's End
+    - Olympus Has Fallen
+    - Kick-Ass 2
+    - Don Jon
+    - Escape Plan
+    - Ender's Game
+    - The Lone Ranger
+    - Warm Bodies
+    - Gangster Squad
+
+- intent: all_movie4
+  examples: |
+    - Interstellar
+    - Guardians of the Galaxy
+    - Gone Girl
+    - Captain America: The Winter Soldier
+    - Whiplash
+    - The Grand Budapest Hotel
+    - The Imitation Game
+    - X-Men: Days of Future Past
+    - Edge of Tomorrow
+    - Kingsman: The Secret Service
+    - Birdman or (The Unexpected Virtue of Ignorance)
+    - John Wick
+    - The Hobbit: The Battle of the Five Armies
+    - Ex Machina
+    - Nightcrawler
+    - Lucy
+    - American Sniper
+    - Divergent
+    - Fury
+    - The Amazing Spider-Man 2
+    - The Maze Runner
+    - Dawn of the Planet of the Apes
+    - The Hunger Games: Mockingjay - Part 1
+    - Big Hero 6
+    - The Theory of Everything
+    - Godzilla
+    - 22 Jump Street
+    - Maleficent
+    - The Fault in Our Stars
+    - Boyhood
+    - The Equalizer
+    - The Lego Movie
+    - The Interview
+    - How to Train Your Dragon 2
+    - Transformers: Age of Extinction
+    - Neighbors
+    - 300: Rise of an Empire
+    - Predestination
+    - Non-Stop
+    - Noah
+    - Transcendence
+    - RoboCop
+    - It Follows
+    - Teenage Mutant Ninja Turtles
+    - The Babadook
+    - Mad Max: Fury Road
+    - Star Wars: Episode VII - The Force Awakens
+    - The Martian
+    - Avengers: Age of Ultron
+    - The Revenant
+    - Inside Out
+    - Jurassic World
+    - Ant-Man
+    - The Hateful Eight
+    - Spotlight
+    - Spectre
+    - Sicario
+    - Room
+    - Furious 7
+    - The Big Short
+    - Mission: Impossible - Rogue Nation
+    - Fifty Shades of Grey
+    - Bridge of Spies
+    - The Hunger Games: Mockingjay - Part 2
+    - The Man from U.N.C.L.E.
+    - Terminator Genisys
+    - Creed
+    - Chappie
+    - Spy
+    - Maze Runner: The Scorch Trials
+    - The Intern
+    - The Divergent Series: Insurgent
+    - Southpaw
+    - Focus
+    - The Lobster
+    - San Andreas
+    - Minions
+    - Everest
+    - The Witch
+    - Ted 2
+    - Straight Outta Compton
+    - Jupiter Ascending
+    - Tomorrowland
+    - Black Mass
+    - The Danish Girl
+    - Cinderella
+    - Legend
+    - The Age of Adaline
+    - Steve Jobs
+    - Fantastic Four
+    - Deadpool
+    - Captain America: Civil War
+    - Batman v Superman: Dawn of Justice
+    - Suicide Squad
+    - Doctor Strange
+    - Arrival
+    - Rogue One: A Star Wars Story
+    - La La Land
+    - Zootopia
+    - Hacksaw Ridge
+
+- intent: all_movie5
+  examples: |
+    - Split
+    - Fantastic Beasts and Where to Find Them
+    - X-Men: Apocalypse
+    - Passengers
+    - 10 Cloverfield Lane
+    - The Nice Guys
+    - Moonlight
+    - Moana
+    - The Jungle Book
+    - The Accountant
+    - Now You See Me 2
+    - Manchester by the Sea
+    - Warcraft
+    - Finding Dory
+    - Sully
+    - Nocturnal Animals
+    - Star Trek Beyond
+    - The Conjuring 2
+    - Don't Breathe
+    - Lion
+    - Jason Bourne
+    - Me Before You
+    - Ghostbusters
+    - Hell or High Water
+    - Hidden Figures
+    - Captain Fantastic
+    - Your Name.
+    - Assassin's Creed
+    - The Magnificent Seven
+    - The Secret Life of Pets
+    - War Dogs
+    - Sausage Party
+    - The Promise
+    - The Girl on the Train
+    - Independence Day: Resurgence
+    - The Legend of Tarzan
+    - Logan
+    - Thor: Ragnarok
+    - Guardians of the Galaxy Vol. 2
+    - Star Wars: Episode VIII - The Last Jedi
+    - Wonder Woman
+    - Dunkirk
+    - Spider-Man: Homecoming
+    - Get Out
+    - Blade Runner 2049
+    - It
+    - Baby Driver
+    - Three Billboards Outside Ebbing, Missouri
+    - Justice League
+    - The Shape of Water
+    - Coco
+    - John Wick: Chapter 2
+    - Jumanji: Welcome to the Jungle
+    - Beauty and the Beast
+    - Kingsman: The Golden Circle
+    - Kong: Skull Island
+    - Pirates of the Caribbean: Dead Men Tell No Tales
+    - Alien: Covenant
+    - Lady Bird
+    - The Greatest Showman
+    - War for the Planet of the Apes
+    - Murder on the Orient Express
+    - Life
+    - Call Me by Your Name
+    - The Fate of the Furious
+    - Wind River
+    - Ghost in the Shell
+    - King Arthur: Legend of the Sword
+    - Mother!
+    - The Hitman's Bodyguard
+    - I, Tonya
+    - Atomic Blonde
+    - The Mummy
+    - Darkest Hour
+    - Bright
+    - Valerian and the City of a Thousand Planets
+    - Baywatch
+    - American Made
+    - Avengers: Infinity War
+    - Black Panther
+    - Deadpool 2
+    - Bohemian Rhapsody
+    - A Quiet Place
+    - Ready Player One
+    - Aquaman
+    - Green Book
+    - Venom
+    - Spider-Man: Into the Spider-Verse
+    - A Star Is Born
+    - Ant-Man and the Wasp
+    - Mission: Impossible - Fallout
+    - Solo: A Star Wars Story
+    - Annihilation
+    - Bird Box
+    - Jurassic World: Fallen Kingdom
+    - Incredibles 2
+    - Hereditary
+    - Fantastic Beasts: The Crimes of Grindelwald
+
+- intent: all_movie6
+  examples: |
+    - BlacKkKlansman
+    - Game Night
+    - Tomb Raider
+    - Ocean's 8
+    - The Favourite
+    - First Man
+    - Red Sparrow
+    - Upgrade
+    - The Meg
+    - Rampage
+    - Roma
+    - Crazy Rich Asians
+    - Searching
+    - Isle of Dogs
+    - Bumblebee
+    - The Equalizer 2
+    - Ralph Breaks the Internet
+    - Bad Times at the El Royale
+    - A Simple Favor
+    - Sicario: Day of the Soldado
+    - The Ballad of Buster Scruggs
+    - Vice
+    - Halloween
+    - The Nun
+    - The Predator
+    - Tag
+    - Joker
+    - Avengers: Endgame
+    - Once Upon a Time... In Hollywood
+    - Parasite
+    - Captain Marvel
+    - Knives Out
+    - 1917
+    - Star Wars: Episode IX - The Rise of Skywalker
+    - Spider-Man: Far from Home
+    - The Irishman
+    - Jojo Rabbit
+    - Ford v Ferrari
+    - John Wick: Chapter 3 - Parabellum
+    - Shazam!
+    - Marriage Story
+    - Alita: Battle Angel
+    - Aladdin
+    - Us
+    - Uncut Gems
+    - The Lion King
+    - Glass
+    - It Chapter Two
+    - The Gentlemen
+    - Toy Story 4
+    - Ad Astra
+    - Midsommar
+    - El Camino: A Breaking Bad Movie
+    - Jumanji: The Next Level
+    - Fast & Furious Presents: Hobbs & Shaw
+    - The Platform
+    - X-Men: Dark Phoenix
+    - Terminator: Dark Fate
+    - Pok�mon Detective Pikachu
+    - 6 Underground
+    - Zombieland: Double Tap
+    - Doctor Sleep
+    - Little Women
+    - The Lighthouse
+    - Rocketman
+    - Godzilla: King of the Monsters
+    - Frozen II
+
+
+- intent: rating
+  examples: |
+    - give me top 10 ratings
+    - give me top 5 ratings
+    - give me top 20 ratings 
+
+- intent: similar
+  examples: |
+    - give me a similar mmovie
+    - similar movies
+    - give me a movie like this
+
+#Genres
+- intent: Action
+  examples: |
+    - give me movie with action
+    - suggest action movie
+    - film with action
+
+- intent: Crime
+  examples: |
+    - give me movie with crime
+    - suggest crime movie
+    - film with crime
+
+- intent: Drama
+  examples: |
+    - give me movie with drama
+    - suggest drama movie
+    - film with drama
+
+- intent: Thriller
+  examples: |
+    - give me movie with thriller
+    - suggest thriller movie
+    - film with thriller
+  
+- intent: Sci-Fi
+  examples: |
+    - give me movie with science
+    - suggest fiction movie
+    - film with science fiction
+
+- intent: Romance 
+  examples: |
+    - Give me ramonce movie
+    - Romantic movie
+    - Movie with romance
+
+- intent: Horror
+  examples: |
+    - Give me horror movie
+    - Scary movie
+    - Movie with ghost
+
+- intent: Comedy
+  examples: |
+    - Give me comedy movie
+    - funny movie
+    - Movie with jokes
+
+- intent: Musical
+  examples: |
+    - Give me musical movie
+    - Sing dance movie
+    - Movie with songs and dancing
+
+- intent: Fantasy
+  examples: |
+    - Give me fantasy movie
+    - fiction movie
+    - Movie with fantasy
+
+- intent: Adventure
+  examples: |
+    - Give me an adventurous movie
+    - adventure movie
+    - Movie with stunts And adventure
+
+- intent: Mystery
+  examples: |
+    - Give me mystery movie
+    - mystery movie
+    - Movie with mystery
+
+
+- intent: movie_details
+  examples: |
+    - tell me about a movie
+    - give details
+    - i want to know about a film
+    - what is the movie about

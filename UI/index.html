@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieBot</title>
+    <link rel="icon" href="video-player.ico"/>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+<body>
+    
+
+    <h1 id="main">Movie Recommendation Bot</h1>
+    <div style="text-align: center;">
+      <img src="movie1.jpg" alt="movie" style="width: 600px; height: 340px;">
+    </div>
+    <h3 id="subhead">“CREATE YOUR OWN VISUAL STYLE… LET IT BE UNIQUE FOR YOURSELF AND YET IDENTIFIABLE TO OTHERS.”</h3>
+    
+
+    <div id="projectorContainer">
+      <div class="projectorLight">
+      <div class="cover"></div>
+      <div class="cover"></div>
+    </div>
+         
+    <div class="projectorBody">
+      <div class="lensHold"></div>
+      <div class="lens"></div>
+    </div>
+    <div class="filmDisk" id="film1">
+      <div class="fdBack">
+          <div class="fdFilm"></div>
+          <div class="fdBar"></div>
+          <div class="fdBar2"></div>
+          <div class="fdCover"></div>
+      </div>
+    </div>
+    <div class="filmDisk" id="film2">
+        <div class="fdBack">
+            <div class="fdFilm"></div>
+            <div class="fdBar"></div>
+            <div class="fdBar2"></div>
+            <div class="fdCover"></div>
+        </div>
+      </div>
+     </div>
+
+    <div id="featureContainer">
+      <h3 id="featureSubhead">FEATURES</h3>
+      <p id="info">Recommendation based on<br>
+          Genre<br>
+          Plot similarity<br>
+          Your mood while you talk<br><br><br>
+
+          You can ask the bot for details of a movie<br>
+          Ex - Cast, Plot, Rating etc
+    </div>
+
+ <!-- <script>
+      !(function () {
+        let e = document.createElement("script");
+        t = document.head || document.getElementsByTagName("head")[0]
+
+      })
+    </script>
+    <div id="webchat"></div>
+    <script src="https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.min.js"></script>
+    <script>
+    WebChat.default.init({
+    selector: "#webchat",
+    customData: {"language": "en"}, // arbitrary custom data. Stay minimal as this will be added to the socket
+    socketUrl: "http://localhost:5005",
+    socketPath: "/socket.io/",
+    title: "Movie Bot",
+    subtitle: "",
+    params: {"storage": "session"} // can be set to "local"  or "session". details in storage section.
+  })
+</script>
+-->  
+<script>!(function () {
+  let e = document.createElement("script"),
+    t = document.head || document.getElementsByTagName("head")[0];
+  (e.src =
+    "https://cdn.jsdelivr.net/npm/rasa-webchat@1.0.0/lib/index.js"),
+    // Replace 1.x.x with the version that you want
+    (e.async = !0),
+    (e.onload = () => {
+      window.WebChat.default(
+        {
+          initPayload: '/greet',
+          customData: { language: "en" },
+          socketUrl: "http://localhost:5005",
+          // add other props here
+        },
+        null
+      );
+    }),
+    t.insertBefore(e, t.firstChild);
+})();
+</script>
+
+<!--<div id="footer">
+  <span>Community of Data Science, PES University 2020&nbsp;&nbsp;|</span>&nbsp;&nbsp;
+  <a id="github" href="https://github.com/adimehta03/CODS">
+      <i class="fab fa-github" style="font-size:18px; color: white;"></i></a>
+   Include all the libraries, languages and frameworks used to build the website 
+  </div>-->
+</body>
+</html>

@@ -1,0 +1,154 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- bot_challenge
+- ask_movie
+- genre
+- rating
+- similar
+- Happy
+- Sad
+- Excitement
+- Disgust
+- Anger
+- Fear
+- Enjoyment
+- all_movie
+- all_movie1
+- all_movie2
+- all_movie3
+- all_movie4
+- all_movie5
+- all_movie6
+- Crime
+- Drama
+- Thriller
+- Mystery
+- Sci-Fi
+- Action
+- Adventure
+- Fantasy
+- Musical
+- Comedy
+- Horror
+- Romance
+- out_of_scope
+- movie_details
+- thank
+
+
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_sad:
+  - text: Here are some movies to cheer you up
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Here are some movies to keep you happy
+  utter_excitement:
+  - text: Here are some exciting movies
+  utter_disgust:
+  - text : Here are some movies to help you with disgust
+  utter_anger:
+  - text : Here are some movies to help with your anger
+  utter_fear:
+  - text: Here are some movies to help with your fear :)
+  utter_enjoyment:
+  - text: Here are some movies to help you enjoy :D
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a movie bot! :)
+  utter_thank:
+  - text: You're welcome! :D
+  utter_movie:
+  - buttons:
+    - payload: genre
+      title: Genre
+    - payload: movie_details
+      title: Details
+    - payload: similar
+      title: Your suggestion
+    text: Based on what would you like the info?
+  utter_reply:
+  - text: What type of genre do you want to watch
+  utter_genre:
+  - buttons:
+    - payload: Crime
+      title: Crime
+    - payload: Drama
+      title: Drama
+    - payload: Thriller
+      title: Thriller
+    - payload: Mystery
+      title: Mystery
+    - payload: Sci-Fi
+      title: Sci-fi
+    - payload: Action
+      title: Action
+    - payload: Adventure
+      title: Adventure
+    - payload: Fantasy
+      title: Fantasy
+    - payload: Musical
+      title: Musical
+    - payload: Comedy
+      title: Comedy
+    - payload: Horror
+      title: Horror
+    - payload: Romance
+      title: Romance
+    text: 'Available genres are: '
+  utter_similar:
+  - text: Enter the movie name
+  utter_rating:
+  - text: 'Do you want top 10 rated movies?'
+  utter_default:
+  - text: Sorry, didn't get that 🤷.  Could you please rephrase?
+  - text:  I didn't understand, could you rephrase that?
+  - text: I'm sorry, but I didn't understand you. Could you please rephrase what youjust said?
+  - text: I'm afraid I didn't get what you just said. Could you rephrase that?
+  - text: I didn't quite get that, could you rephrase your message?
+  - text: Could you rephrase your message? I didn't get it, I'm sorry.
+  utter_details:
+  - text: For which movie do you want more details?
+  utter_end:
+  - text: Hope you liked the information!
+  utter_help:
+  - text: Sorry I couldn't be of any help. I will learn to be better :)
+
+actions:
+- action_hello_world
+- action_movie_genre
+- action_movie_plot
+- action_movie_ratings
+- action_movie_mood
+- action_custom_fallback
+- action_give_details
+- utter_rating
+- utter_similar
+- utter_genre
+- utter_movie
+- utter_greet
+- utter_happy
+- utter_iamabot
+- utter_thank
+- utter_sad
+- utter_excitement
+- utter_disgust
+- utter_anger
+- utter_fear
+- utter_enjoyment
+- utter_did_that_help
+- utter_goodbye
+- utter_reply
+- utter_default
+- utter_details
+- utter_end
+- utter_help
